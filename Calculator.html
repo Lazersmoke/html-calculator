@@ -5,28 +5,32 @@ current_string="whatever"
 -->
 <head>
 <script>
+current_string=""
+function pressNumber(numPressed){
+  currentString+=String(numPressed)
+}
 </script>
 </head>
 <body>
 <input id="calcString" type="text" readonly></input>
 <br>
-<button>7</button>
-<button>8</button>
-<button>9</button>
+<button onclick="pressNumber(7)">7</button>
+<button onclick="pressNumber(8)">8</button>
+<button onclick="pressNumber(9)">9</button>
 <button>+</button>
 <br>
-<button>4</button>
-<button>5</button>
-<button>6</button>
+<button onclick="pressNumber(4)">4</button>
+<button onclick="pressNumber(5)">5</button>
+<button onclick="pressNumber(6)">6</button>
 <button>-</button>
 <br>
-<button>1</button>
-<button>2</button>
-<button>3</button>
+<button onclick="pressNumber(1)">1</button>
+<button onclick="pressNumber(2)">2</button>
+<button onclick="pressNumber(3)">3</button>
 <button>/</button>
 <br>
 <button>.</button>
-<button>0</button>
+<button onclick="pressNumber(0)">0</button>
 <button>*</button>
 <button>=</button>
 </body>
