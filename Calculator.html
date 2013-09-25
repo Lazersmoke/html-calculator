@@ -32,6 +32,6 @@ function pressHandler(buttonPressed){
 <button>.</button>
 <button onclick="pressHandler(0)">0</button>
 <button>*</button>
-<button>=</button>
+<button onclick="document.getElementById('calcString').value=String(eval(document.getElementById('calcString').value))">=</button>
 </body>
 </html>
