@@ -5,14 +5,14 @@ current_string="whatever"
 -->
 <head>
 <script>
-current_string=""
-function pressNumber(numPressed){
-  currentString+=String(numPressed)
+currentString=""
+function pressHandler(buttonPressed){
+  Document.getElementById('calcString').innerHTML+=String(buttonPressed)
 }
 </script>
 </head>
 <body>
-<input id="calcString" type="text" readonly></input>
+<input id="calcString" type="text" onchange="currentString=Document.getElementById('calcString').innerHTML"></input>
 <br>
 <button onclick="pressNumber(7)">7</button>
 <button onclick="pressNumber(8)">8</button>
