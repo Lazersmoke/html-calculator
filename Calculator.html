@@ -7,12 +7,12 @@ current_string="whatever"
 <script>
 currentString=""
 function pressHandler(buttonPressed){
-  Document.getElementById('calcString').innerHTML+=String(buttonPressed)
+  document.getElementById('calcString').innerHTML+=String(buttonPressed)
 }
 </script>
 </head>
 <body>
-<input id="calcString" type="text" onchange="currentString=Document.getElementById('calcString').innerHTML"></input>
+<input id="calcString" type="text" onchange="currentString=document.getElementById('calcString').innerHTML"></input>
 <br>
 <button onclick="pressHandler(7)">7</button>
 <button onclick="pressHandler(8)">8</button>
